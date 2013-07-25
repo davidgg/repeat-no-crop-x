@@ -8,6 +8,13 @@ Provide a simple jquery plugin to allow set a background image without crop it.
 
 Traditional CSS background-image and its property 'repeat' (in this case repeat-x) repeat an image along its complete width. This means that if the total width of the element and the image are not equals the background image will be crop it at the end.
 
+With this plugin applied in a specified element the background will be completed with a number of images that fit completely in the available width. 
+
+The container element must not have any child and should be for an aesthetic purpose only, such as a separator.
+```html
+<div id="midSeparator"></div>
+```
+
 This jquery plugin is a particular solution to very specific problems.
 
 ## Instructions ##
@@ -64,3 +71,4 @@ If you want to use it in responsive sites you must implement onresize event for 
 
 - Container element must have a width
 - Container element must be a block
+- Container element must not have any child.
